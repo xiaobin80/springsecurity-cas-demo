@@ -54,7 +54,7 @@ public class SpringsecurityCasDemoApplication {
 	  CasAuthenticationProvider provider = new CasAuthenticationProvider();
 	  provider.setServiceProperties(serviceProperties());
 	  provider.setTicketValidator(ticketValidator());
-	  provider.setUserDetailsService((s) -> new User("casuser", "Mellon",
+	  provider.setUserDetailsService((s) -> new User("samy@xyz.com", "abc125",
         true, true, true, true,
         AuthorityUtils.createAuthorityList("ROLE_ADMIN")));
 	  provider.setKey("CAS_PROVIDER_LOCALHOST_9000");
